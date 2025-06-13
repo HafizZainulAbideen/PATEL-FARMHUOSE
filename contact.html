@@ -1,193 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Patel Farmhouse</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f4f4;
+      padding-top: 80px;
+    }
 
-<style>body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+    .navbar {
+      background: linear-gradient(to right, #3a6186, #89253e);
+    }
 
-.luxury-navbar {
-    background: linear-gradient(to right, #3a6186, #89253e);
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
+    .navbar-brand,
+    .nav-link {
+      color: white !important;
+    }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
+    .nav-link:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
 
-.luxury-navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+    header {
+      background: url('farmhouse-background.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
 
-.luxury-navbar ul li {
-    position: relative;
-}
+    .contact-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-.luxury-navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-    transition: 0.3s;
-}
+    h1, h2 {
+      color: #2E8B57;
+    }
 
-.luxury-navbar ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-}
+    .info {
+      font-size: 18px;
+      margin: 10px 0;
+    }
 
-header {
-    text-align: center;
-    padding: 100px 20px 50px;
-    background-image: url('farmhouse-background.jpg');
-    background-size: cover;
-    color: white;
-}
+    .btn-custom {
+      background-color: #2E8B57;
+      color: white;
+    }
 
-.content {
-    padding: 20px;
-    text-align: center;
-}
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-        .container {
-            width: 50%;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #2E8B57;
-        }
-        .info {
-            margin: 20px 0;
-            font-size: 18px;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            background-color: #2E8B57;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .contact-form button:hover {
-            background-color: #245A38;
-        }
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-        }
+    .btn-custom:hover {
+      background-color: #245A38;
+    }
 
-footer {
-    background-color: #2E8B57;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 16px;
-    font-family: 'Arial', sans-serif;
-    border-top: 2px solid rgba(255, 255, 255, 0.2);
-}
+    footer {
+      background-color: #2E8B57;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 16px;
+      margin-top: 40px;
+    }
 
+    iframe {
+      border: none;
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
 
-</style>
+    @media (max-width: 576px) {
+      header {
+        padding: 80px 10px 40px;
+      }
 
+      .contact-box {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav class="luxury-navbar">
-        <div class="logo">Patel Farmhouse</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="gallary.html">Gallery</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
 
-
-<br><br><br><br><br>
-
-
-
-
-
-
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <h1>Contact Us</h1>
+      <a class="navbar-brand" href="#">Patel Farmhouse</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon bg-light rounded"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallary.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Contact Us</h1>
+    <p class="lead">We're here to help you plan your perfect getaway at Patel Farmhouse</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 contact-box">
         <p class="info">📍 Patel Farmhouse, Dayadara, Gujarat</p>
-        <p class="info">📞 Phone: +91 9427727862 | 📧 Email: contact@patelfarmhouse.com</p>
+        <p class="info">📞 +91 9427727862 | 📧 contact@patelfarmhouse.com</p>
         <p class="info">🌐 Website: <a href="http://www.patelfarmhouse.com" target="_blank">www.patelfarmhouse.com</a></p>
-        
-        <h2>Send Us a Message</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="tel" placeholder="Your Phone" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button><br><br><br>
+
+        <h2 class="mt-4">Send Us a Message</h2>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required />
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" required />
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Your Phone" required />
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-custom w-100">Send Message</button>
         </form>
 
-        <h2>Find Us on the Map</h2><br><br>
+        <h2 class="mt-5">Find Us on the Map</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.8559286690433!2d72.99073267505561!3d21.198116380485244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be052acfe9b7a29%3A0x62c27a6bb4a4ce92!2sDayadara%2C%20Gujarat%20392152!5e0!3m2!1sen!2sin!4v1718298476764!5m2!1sen!2sin"></iframe>
+      </div>
     </div>
+  </div>
 
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Patel Farmhouse | 📍 Dayadara, Gujarat | 📞 +91 9427727862</p>
+    <p>👑 Founder: Patel Zain Ul Abideen | 🔹 Manager: Patel M. Hasnain</p>
+  </footer>
 
-<footer>
-    <div class="footer-content">
-        <p>© 2025 Patel Farmhouse | 📍 Dayadara, Gujarat | 📞 +91 9427727862</p>
-        <p>👑 Founder: Patel Zain Ul Abideen | 🔹 Manager: Patel M. Hasnain</p>
-    </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
