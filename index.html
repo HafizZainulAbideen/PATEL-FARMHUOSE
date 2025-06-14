@@ -10,6 +10,7 @@
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
+      padding-top: 70px; /* Space for fixed navbar */
       background-color: #f4f4f4;
     }
 
@@ -26,18 +27,9 @@
       background-image: url('https://media.istockphoto.com/id/1926970720/photo/back-yard-of-a-hotel.webp');
       background-size: cover;
       background-position: center;
-      padding: 120px 20px 80px;
+      padding: 100px 20px;
       color: white;
       text-align: center;
-    }
-
-    .intro {
-      padding: 40px 20px;
-    }
-
-    .gallery {
-      padding: 40px 20px;
-      background-color: #fff;
     }
 
     .gallery img {
@@ -45,7 +37,6 @@
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
     }
 
     footer {
@@ -55,7 +46,6 @@
       padding: 20px;
       font-size: 16px;
       border-top: 2px solid rgba(255, 255, 255, 0.2);
-      margin-top: 40px;
     }
   </style>
 </head>
@@ -65,8 +55,8 @@
   <nav class="navbar navbar-expand-lg luxury-navbar fixed-top">
     <div class="container">
       <a class="navbar-brand text-white" href="#">Patel Farmhouse</a>
-      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon bg-light rounded"></span>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
@@ -88,18 +78,10 @@
     </div>
   </header>
 
-  <!-- Intro Section -->
-  <section class="intro">
-    <div class="container">
-      <h2>Why Choose Us?</h2>
-      <p>Peaceful location • Lush greenery • Comfortable stay • Perfect for family outings</p>
-    </div>
-  </section>
-
   <!-- Gallery Section -->
-  <section class="gallery">
+  <section class="gallery py-5">
     <div class="container">
-      <h2 class="mb-4">Gallery</h2>
+      <h2 class="mb-4 text-center">Gallery</h2>
       <div class="row g-4">
         <div class="col-md-6">
           <img src="https://media.istockphoto.com/id/1926970720/photo/back-yard-of-a-hotel.webp" alt="Farmhouse Image 1">
@@ -113,14 +95,11 @@
 
   <!-- Footer -->
   <footer>
-    <div>
-      <p>© 2025 Patel Farmhouse | 📍 Dayadara, Gujarat | 📞 +91 9427727862</p>
-      <p>👑 Founder: Patel Zain Ul Abideen | 🔹 Manager: Patel M. Hasnain</p>
-    </div>
+    <p>© 2025 Patel Farmhouse | 📍 Dayadara, Gujarat | 📞 +91 9427727862</p>
+    <p>👑 Founder: Patel Zain Ul Abideen | 🔹 Manager: Patel M. Hasnain</p>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- Bootstrap JS (Required for navbar toggle) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
