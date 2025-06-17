@@ -10,7 +10,7 @@
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding-top: 70px; /* Space for fixed navbar */
+      padding-top: 70px;
       background-color: #f4f4f4;
     }
 
@@ -24,7 +24,7 @@
     }
 
     header {
-      background-image: url('https://media.istockphoto.com/id/1926970720/photo/back-yard-of-a-hotel.webp');
+      background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1500&q=80');
       background-size: cover;
       background-position: center;
       padding: 100px 20px;
@@ -32,9 +32,15 @@
       text-align: center;
     }
 
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
     .gallery img {
       width: 100%;
-      height: auto;
+      height: 250px;
+      object-fit: cover;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
@@ -46,6 +52,12 @@
       padding: 20px;
       font-size: 16px;
       border-top: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
@@ -62,8 +74,8 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link text-white" href="home.html">Home</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="gallary.html">Gallary</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="contact.html">contact</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="gallary.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -83,11 +95,14 @@
     <div class="container">
       <h2 class="mb-4 text-center">Gallery</h2>
       <div class="row g-4">
-        <div class="col-md-6">
-          <img src="https://media.istockphoto.com/id/1926970720/photo/back-yard-of-a-hotel.webp" alt="Farmhouse Image 1">
+        <div class="col-sm-6 col-lg-4">
+          <img src="https://images.unsplash.com/photo-1560180474-4b1e3a94c5e3?auto=format&fit=crop&w=800&q=80" alt="Poolside View">
         </div>
-        <div class="col-md-6">
-          <img src="https://media.istockphoto.com/id/1225846823/photo/country-house-with-pool.webp" alt="Farmhouse Image 2">
+        <div class="col-sm-6 col-lg-4">
+          <img src="https://images.unsplash.com/photo-1600585153922-e0c3ce47e9f2?auto=format&fit=crop&w=800&q=80" alt="Lawn Area">
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <img src="https://images.unsplash.com/photo-1559767940-0e637cecc83d?auto=format&fit=crop&w=800&q=80" alt="Interior View">
         </div>
       </div>
     </div>
@@ -99,7 +114,7 @@
     <p>👑 Founder: Patel Zain Ul Abideen | 🔹 Manager: Patel M. Hasnain</p>
   </footer>
 
-  <!-- Bootstrap JS (Required for navbar toggle) -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
